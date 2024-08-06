@@ -131,7 +131,7 @@
                             </a> for more info</label>
                           </div>
                         </form>
-                        <form id="form2">
+                        <form id="form2" action="{{ route('otp') }}">
                           <div class="cds-flex-f1g67tkn cds-column-ci8mx7v cds-3-_1mvq9l2 cds-3-_zv3bp">
                             <div class="cds-flex-f1g67tkn">
                               <button id="backBtn" data-testid="email-button" class="cds-interactable-i9xooc6 cds-focusRing-fd371rq cds-line-lm9v2nm cds-button-b18qe5go cds-scaledDownState-sxr2bd6 pii9da1" type="button" style="--interactable-border-radius: 8px; --interactable-background: var(--background); --interactable-hovered-background: rgba(15, 16, 18, 0.1); --interactable-hovered-opacity: 0.98; --interactable-pressed-background: rgb(30, 31, 32); --interactable-pressed-opacity: 0.92; --interactable-disabled-background: rgb(10, 11, 13); width: 100%;">

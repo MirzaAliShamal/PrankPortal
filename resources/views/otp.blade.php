@@ -30,7 +30,7 @@
                             <div class="cds-flex-f1g67tkn cds-column-ci8mx7v cds-2-_8lqlrb" style="max-width: 100%; overflow-wrap: break-word;">
                               <h1 class="cds-typographyResets-t1xhpuq2 cds-title1-toujgnf cds-foreground-f1yzxzgu cds-transition-txjiwsi cds-start-s1muvu8a cds-wrap-w1yty5cj">Enter the 6-digit code we emailed you</h1>
                               <span class="cds-typographyResets-t1xhpuq2 cds-body-bb7l4gg cds-foregroundMuted-f1vw1sy6 cds-transition-txjiwsi cds-start-s1muvu8a">Verify your email 
-                                <strong class="cds-typographyResets-t1xhpuq2 cds-headline-htr1998 cds-foreground-f1yzxzgu cds-transition-txjiwsi cds-start-s1muvu8a">test@gmail.com</strong>. This helps us keep your account secure by verifying that it’s really you.</span>
+                                <strong class="cds-typographyResets-t1xhpuq2 cds-headline-htr1998 cds-foreground-f1yzxzgu cds-transition-txjiwsi cds-start-s1muvu8a"></strong>. This helps us keep your account secure by verifying that it’s really you.</span>
                               </div>
                             </div>
                             <div class="cds-flex-f1g67tkn cds-column-ci8mx7v">
@@ -122,13 +122,13 @@
                                       </span>
                                     </span>
                                   </button>
-                                  <button data-testid="go-back-button" class="cds-interactable-i9xooc6 cds-focusRing-fd371rq cds-transparent-tlx9nbb cds-button-b18qe5go cds-fullWidth-fnzgr0o cds-scaledDownState-sxr2bd6 cds-primary-piuvss6 cds-button-bpih6bv cds-buttonBlock-b90146d cds-4-_1arbnhr cds-4-_hd2z08" type="button" style="--interactable-height: 56px; --interactable-border-radius: 56px; --interactable-background: transparent; --interactable-disabled-background: rgb(10, 11, 13);">
+                                  <a href="{{ route('login') }}" data-testid="go-back-button" class="cds-interactable-i9xooc6 cds-focusRing-fd371rq cds-transparent-tlx9nbb cds-button-b18qe5go cds-fullWidth-fnzgr0o cds-scaledDownState-sxr2bd6 cds-primary-piuvss6 cds-button-bpih6bv cds-buttonBlock-b90146d cds-4-_1arbnhr cds-4-_hd2z08" type="button" style="--interactable-height: 56px; --interactable-border-radius: 56px; --interactable-background: transparent; --interactable-disabled-background: rgb(10, 11, 13);">
                                     <span class="cds-positionRelative-p109mlw7">
                                       <span class="cds-typographyResets-t1xhpuq2 cds-headline-htr1998 cds-primary-piuvss6 cds-transition-txjiwsi cds-start-s1muvu8a">
                                         <span class="">Go back</span>
                                       </span>
                                     </span>
-                                  </button>
+                                  </a>
                                 </div>
                               </div>
                             </div>
