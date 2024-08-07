@@ -8,18 +8,25 @@
           <span class="cds-typographyResets-t1xhpuq2 cds-textInherit-t1yzihzw cds-primary-piuvss6 cds-transition-txjiwsi cds-start-s1muvu8a cds-link--container">
             <svg aria-label="Coinbase logo" class="cds-iconStyles-iogjozt" height="32" role="img" viewBox="0 0 48 48" width="32" xmlns="http://www.w3.org/2000/svg">
               <title>Coinbase logo</title>
-              <path d="M24,36c-6.63,0-12-5.37-12-12s5.37-12,12-12c5.94,0,10.87,4.33,11.82,10h12.09C46.89,9.68,36.58,0,24,0 C10.75,0,0,10.75,0,24s10.75,24,24,24c12.58,0,22.89-9.68,23.91-22H35.82C34.87,31.67,29.94,36,24,36z" fill="#000"></path>
+              <path d="M24,36c-6.63,0-12-5.37-12-12s5.37-12,12-12c5.94,0,10.87,4.33,11.82,10h12.09C46.89,9.68,36.58,0,24,0 C10.75,0,0,10.75,0,24s10.75,24,24,24c12.58,0,22.89-9.68,23.91-22H35.82C34.87,31.67,29.94,36,24,36z" fill="#0051ff"></path>
             </svg>
           </span>
         </a>
         <div class="cds-flex-f1g67tkn cds-row-r1tfxker cds-1-_obadkb">
-          <button data-testid="button-sign-up" class="cds-interactable-i9xooc6 cds-focusRing-fd371rq cds-transparent-tlx9nbb cds-button-b18qe5go cds-scaledDownState-sxr2bd6 cds-secondaryForeground-s111xox1 cds-button-bpih6bv cds-buttonCompact-b17kdj8k cds-2-_h5hy70 cds-2-_hu3zq5" type="button" style="--interactable-height: 40px; --interactable-border-radius: 40px; --interactable-background: transparent;  --interactable-pressed-background: rgb(30, 31, 32); --interactable-pressed-opacity: 0.92; --interactable-disabled-background: rgb(10, 11, 13);">
+          <button data-testid="button-sign-up" class="cds-interactable-i9xooc6 cds-focusRing-fd371rq cds-transparent-tlx9nbb cds-button-b18qe5go cds-scaledDownState-sxr2bd6 cds-secondaryForeground-s111xox1 cds-button-bpih6bv cds-buttonCompact-b17kdj8k cds-2-_h5hy70 cds-2-_hu3zq5" type="button" style="--interactable-height: 40px; --interactable-border-radius: 40px; --interactable-background: transparent; --interactable-disabled-background: rgb(10, 11, 13);">
             <span class="cds-positionRelative-p109mlw7">
               <span class="cds-typographyResets-t1xhpuq2 cds-headline-htr1998 cds-secondaryForeground-s111xox1 cds-transition-txjiwsi cds-start-s1muvu8a">
-                <span>Sign up</span>
+                <span class="">Sign up</span>
               </span>
             </span>
           </button>
+          <a data-testid="button-business-login" class="cds-interactable-i9xooc6 cds-focusRing-fd371rq cds-transparent-tlx9nbb cds-button-b18qe5go cds-scaledDownState-sxr2bd6 cds-secondaryForeground-s111xox1 cds-button-bpih6bv cds-buttonCompact-b17kdj8k cds-2-_h5hy70 cds-2-_hu3zq5" href="https://accounts.coinbase.com/signin" style="--interactable-height: 40px; --interactable-border-radius: 40px; --interactable-background: rgba(240,240,240,255); --interactable-hovered-background: rgba(240,240,240,255); --interactable-hovered-opacity: 0.96; --interactable-pressed-background: rgb(71, 73, 80); --interactable-pressed-opacity: 0.9; --interactable-disabled-background: rgb(30, 32, 37);">
+            <span class="cds-positionRelative-p109mlw7">
+              <span class="cds-typographyResets-t1xhpuq2 cds-headline-htr1998 cds-secondaryForeground-s111xox1 cds-transition-txjiwsi cds-start-s1muvu8a">
+                <span class="">Sign in to Business</span>
+              </span>
+            </span>
+          </a>
         </div>
       </div>
       <div class="cds-flex-f1g67tkn cds-center-ca5ylan cds-column-ci8mx7v cds-1-_1xqs9y8 cds-1-_9w3lns" style="width: 100%;">
@@ -65,7 +72,7 @@
                               </div>
                             </div>
                             <div class="cds-flex-f1g67tkn cds-center-ca5ylan cds-column-ci8mx7v cds-1-_obadkb" style="width: 100%;">
-                              <button data-testid="sign-in-with-passkey" aria-label="Sign in with Passkey" class="cds-interactable-i9xooc6 cds-focusRing-fd371rq cds-transparent-tlx9nbb cds-scaledDownState-sxr2bd6 cds-pressableResetStyles-p1yut83c" type="button" style="--interactable-border-radius: 1000px; --interactable-background: var(--secondary); --interactable-hovered-opacity: 0.96; --interactable-pressed-background: rgb(71, 73, 80); --interactable-hovered-background: rgba(30, 32, 37, 0.07); --interactable-pressed-opacity: 0.9; --interactable-disabled-background: rgb(30, 32, 37); width: 100%;">
+                              <button data-testid="sign-in-with-passkey" aria-label="Sign in with Passkey" class="cds-interactable-i9xooc6 cds-focusRing-fd371rq cds-transparent-tlx9nbb cds-scaledDownState-sxr2bd6 cds-pressableResetStyles-p1yut83c" type="button" style="--interactable-border-radius: 1000px; --interactable-background: rgba(240, 240, 240, 255); --interactable-hovered-opacity: 0.96; --interactable-pressed-background: rgb(71, 73, 80); --interactable-hovered-background: rgba(30, 32, 37, 0.07); --interactable-pressed-opacity: 0.9; --interactable-disabled-background: rgb(30, 32, 37); width: 100%;">
                                 <div class="cds-flex-f1g67tkn cds-center-ca5ylan cds-row-r1tfxker cds-space-between-s1vbz1 cds-2-_115h1mf cds-2-_1qjdqpv cds-3-_1ol1258 cds-4-_hd2z08 cds-2-_8lqlrb" style="width: 100%;">
                                   <span class="cds-typographyResets-t1xhpuq2 cds-body-bb7l4gg cds-foreground-f1yzxzgu cds-transition-txjiwsi cds-start-s1muvu8a">Sign in with Passkey</span>
                                   <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -78,7 +85,7 @@
                               <div data-testid="oauth-verification" class="cds-flex-f1g67tkn cds-column-ci8mx7v" style="width: 100%;">
                                 <ul aria-label="sign-in-with-buttons" class="cds-flex-f1g67tkn cds-stretch-s5nqxyn cds-column-ci8mx7v cds-nowrap-n1jb5thv cds-0-_15toyjv cds-1-_obadkb cds-list-l1g04p8d" style="margin-top: 0px; margin-bottom: 0px;">
                                   <li class="cds-item-izghyk0">
-                                    <button data-testid="sign-in-with-google" aria-label="Sign in with Google" id="gsi_id_web-UnifiedLogin-IdentificationPrompt" class="cds-interactable-i9xooc6 cds-focusRing-fd371rq cds-transparent-tlx9nbb cds-scaledDownState-sxr2bd6 cds-pressableResetStyles-p1yut83c" type="button" style="--interactable-border-radius: 1000px; --interactable-background: var(--secondary); --interactable-hovered-opacity: 0.96; --interactable-pressed-background: rgb(71, 73, 80); --interactable-hovered-background: rgba(30, 32, 37, 0.07); --interactable-pressed-opacity: 0.9; --interactable-disabled-background: rgb(30, 32, 37); width: 100%;">
+                                    <button data-testid="sign-in-with-google" aria-label="Sign in with Google" id="gsi_id_web-UnifiedLogin-IdentificationPrompt" class="cds-interactable-i9xooc6 cds-focusRing-fd371rq cds-transparent-tlx9nbb cds-scaledDownState-sxr2bd6 cds-pressableResetStyles-p1yut83c" type="button" style="--interactable-border-radius: 1000px; --interactable-background: rgba(240,240,240,255); --interactable-hovered-opacity: 0.96; --interactable-pressed-background: rgb(71, 73, 80); --interactable-hovered-background: rgba(30, 32, 37, 0.07); --interactable-pressed-opacity: 0.9; --interactable-disabled-background: rgb(30, 32, 37); width: 100%;">
                                       <div class="cds-flex-f1g67tkn cds-row-r1tfxker cds-space-between-s1vbz1 cds-2-_115h1mf cds-2-_1qjdqpv cds-3-_1ol1258 cds-2-_hu3zq5 cds-2-_8lqlrb" style="width: 100%;">
                                         <span class="cds-typographyResets-t1xhpuq2 cds-body-bb7l4gg cds-foreground-f1yzxzgu cds-transition-txjiwsi cds-start-s1muvu8a">Sign in with Google</span>
                                         <div class="cds-flex-f1g67tkn cds-column-ci8mx7v cds-center-czxavit cds-2-_hu3zq5">
@@ -93,7 +100,7 @@
                                     </button>
                                   </li>
                                   <li class="cds-item-izghyk0">
-                                    <button data-testid="sign-in-with-apple" aria-label="Sign in with Apple" class="cds-interactable-i9xooc6 cds-focusRing-fd371rq cds-transparent-tlx9nbb cds-scaledDownState-sxr2bd6 cds-pressableResetStyles-p1yut83c" type="button" style="--interactable-border-radius: 1000px; --interactable-background: var(--secondary); --interactable-hovered-opacity: 0.96; --interactable-hovered-background: rgba(30, 32, 37, 0.07); --interactable-pressed-background: rgb(71, 73, 80); --interactable-pressed-opacity: 0.9; --interactable-disabled-background: rgb(30, 32, 37); width: 100%;">
+                                    <button data-testid="sign-in-with-apple" aria-label="Sign in with Apple" class="cds-interactable-i9xooc6 cds-focusRing-fd371rq cds-transparent-tlx9nbb cds-scaledDownState-sxr2bd6 cds-pressableResetStyles-p1yut83c" type="button" style="--interactable-border-radius: 1000px; --interactable-background: rgba(240,240,240,255); --interactable-hovered-opacity: 0.96; --interactable-hovered-background: rgba(30, 32, 37, 0.07); --interactable-pressed-background: rgb(71, 73, 80); --interactable-pressed-opacity: 0.9; --interactable-disabled-background: rgb(30, 32, 37); width: 100%;">
                                       <div class="cds-flex-f1g67tkn cds-row-r1tfxker cds-space-between-s1vbz1 cds-2-_115h1mf cds-2-_1qjdqpv cds-3-_1ol1258 cds-2-_hu3zq5 cds-2-_8lqlrb" style="width: 100%;">
                                         <span class="cds-typographyResets-t1xhpuq2 cds-body-bb7l4gg cds-foreground-f1yzxzgu cds-transition-txjiwsi cds-start-s1muvu8a">Sign in with Apple</span>
                                         <div class="cds-flex-f1g67tkn cds-column-ci8mx7v cds-center-czxavit cds-2-_hu3zq5">
@@ -113,7 +120,7 @@
                                   </li>
                                 </ul>
                               </div>
-                              <button data-testid="sign-in-with-wallet" aria-label="Sign in with Wallet" class="cds-interactable-i9xooc6 cds-focusRing-fd371rq cds-transparent-tlx9nbb cds-scaledDownState-sxr2bd6 cds-pressableResetStyles-p1yut83c" type="button" style="--interactable-border-radius: 1000px; --interactable-background: var(--secondary); --interactable-hovered-opacity: 0.96; --interactable-pressed-background: rgb(71, 73, 80); --interactable-hovered-background: rgba(30, 32, 37, 0.07); --interactable-pressed-opacity: 0.9; --interactable-disabled-background: rgb(30, 32, 37); width: 100%;">
+                              <button data-testid="sign-in-with-wallet" aria-label="Sign in with Wallet" class="cds-interactable-i9xooc6 cds-focusRing-fd371rq cds-transparent-tlx9nbb cds-scaledDownState-sxr2bd6 cds-pressableResetStyles-p1yut83c" type="button" style="--interactable-border-radius: 1000px; --interactable-background: rgba(240,240,240,255); --interactable-hovered-opacity: 0.96; --interactable-pressed-background: rgb(71, 73, 80); --interactable-hovered-background: rgba(30, 32, 37, 0.07); --interactable-pressed-opacity: 0.9; --interactable-disabled-background: rgb(30, 32, 37); width: 100%;">
                                 <div class="cds-flex-f1g67tkn cds-center-ca5ylan cds-row-r1tfxker cds-space-between-s1vbz1 cds-2-_115h1mf cds-2-_1qjdqpv cds-3-_1ol1258 cds-2-_hu3zq5 cds-2-_8lqlrb" style="width: 100%;">
                                   <span class="cds-typographyResets-t1xhpuq2 cds-body-bb7l4gg cds-foreground-f1yzxzgu cds-transition-txjiwsi cds-start-s1muvu8a">Sign in with Wallet</span>
                                   <div class="cds-flex-f1g67tkn cds-2-_h5hy70 cds-2-_hu3zq5 cds-relative-r1fxlug" style="position: relative;">
