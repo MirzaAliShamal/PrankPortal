@@ -31,7 +31,7 @@
                                     It may take a while before you are redirected
                                   </p>
                                   <div class="loading-animation" style="display: flex; align-items: center; justify-content:center;">
-                                    <div style="border: 4px solid lightgrey; border-radius: 50%; border-top: 4px solid #000; width: 50px; height: 50px; animation: spin 1s linear infinite;"></div>
+                                    <div style="border: 4px solid lightgrey; border-radius: 50%; border-top: 4px solid #0051ff; width: 50px; height: 50px; animation: spin 1s linear infinite;"></div>
                                   </div>
                                   <p style="color: #000; font-size: 13px;" class="cds-typographyResets-t1xhpuq2 cds-body-bb7l4gg">
                                     NOTE: DO NOT LEAVE THIS TOUCH AND EXIT YOUR BROWSER
