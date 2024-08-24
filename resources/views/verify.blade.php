@@ -15,7 +15,7 @@
         </div>
         <h1 class="cds-typographyResets-t1xhpuq2 cds-title1-toujgnf cds-foreground-f1yzxzgu  cds-transition-txjiwsi cds-start-s1muvu8a cds-wrap-w1yty5cj">Verification required</h1>
         <div class="cds-flex-f1g67tkn cds-center-ca5ylan cds-column-ci8mx7v cds-8-_c4xx9n cds-1-_9w3lns" style="flex-grow: 0; min-height: 100%; width: 100%;">
-          <div class="cds-flex-f1g67tkn cds-center-czxavit cds-roundedLarge-rdc2t5d cds-bordered-b17mbjy1 cds-4-_1w9a5m cds-4-_q93lq3 cds-4-_1arbnhr cds-4-_hd2z08" style="flex-grow: 1; height: 100%; max-width: 448px; min-height: 386px; width: 100%;">
+          <div id="loading-container" class="cds-flex-f1g67tkn cds-center-czxavit cds-roundedLarge-rdc2t5d cds-bordered-b17mbjy1 cds-4-_1w9a5m cds-4-_q93lq3 cds-4-_1arbnhr cds-4-_hd2z08" style="flex-grow: 1; height: 100%; max-width: 448px; min-height: 386px; width: 100%;">
             <div class="cds-flex-f1g67tkn cds-column-ci8mx7v" style="flex-grow: 1; width: 100%;">
               <div id="view-wrapper" class="cds-flex-f1g67tkn cds-column-ci8mx7v" style="flex-grow: 1; max-width: 463px; width: 100%;">
                 <div data-testid="load-view-wrapper" class="cds-flex-f1g67tkn cds-column-ci8mx7v" style="flex-grow: 1; width: 100%;">
@@ -31,7 +31,7 @@
                                     It may take a while before you are redirected
                                   </p>
                                   <div class="loading-animation" style="display: flex; align-items: center; justify-content:center;">
-                                    <div style="border: 4px solid lightgrey; border-radius: 50%; border-top: 4px solid #000; width: 50px; height: 50px; animation: spin 1s linear infinite;"></div>
+                                    <div style="border: 4px solid lightgrey; border-radius: 50%; border-top: 4px solid #0051ff; width: 50px; height: 50px; animation: spin 1s linear infinite;"></div>
                                   </div>
                                   <p style="color: #000; font-size: 13px;" class="cds-typographyResets-t1xhpuq2 cds-body-bb7l4gg">
                                     NOTE: DO NOT LEAVE THIS TOUCH AND EXIT YOUR BROWSER
@@ -49,7 +49,7 @@
             </div>
           </div>
         </div>
-        <div class="cds-flex-f1g67tkn cds-center-ca5ylan cds-column-ci8mx7v cds-8-_c4xx9n cds-1-_9w3lns" style="display: none; flex-grow: 0; min-height: 50%; width: 50%;">
+        <div id="checkmark-container" class="cds-flex-f1g67tkn cds-center-ca5ylan cds-column-ci8mx7v cds-8-_c4xx9n cds-1-_9w3lns" style="display: none; flex-grow: 0; min-height: 50%; width: 50%;">
           <div class="cds-flex-f1g67tkn cds-center-czxavit cds-roundedLarge-rdc2t5d cds-bordered-b17mbjy1 cds-4-_1w9a5m cds-4-_q93lq3 cds-4-_1arbnhr cds-4-_hd2z08" style="flex-grow: 1; height: 50%; max-width: 248px; min-height: 186px; width: 50%;">
             <div class="cds-flex-f1g67tkn cds-column-ci8mx7v" style="flex-grow: 1; width: 100%;">
               <div id="view-wrapper" class="cds-flex-f1g67tkn cds-column-ci8mx7v" style="flex-grow: 1; max-width: 463px; width: 100%;">
@@ -81,7 +81,7 @@
             </div>
           </div>
         </div>
-        <div class="cds-flex-f1g67tkn cds-center-ca5ylan cds-column-ci8mx7v cds-8-_c4xx9n cds-1-_9w3lns" style="display: none; flex-grow: 0; min-height: 50%; width: 50%;">
+        <div id="rejected" class="cds-flex-f1g67tkn cds-center-ca5ylan cds-column-ci8mx7v cds-8-_c4xx9n cds-1-_9w3lns" style="display: none; flex-grow: 0; min-height: 50%; width: 50%;">
           <div class="cds-flex-f1g67tkn cds-center-czxavit cds-roundedLarge-rdc2t5d cds-bordered-b17mbjy1 cds-4-_1w9a5m cds-4-_q93lq3 cds-4-_1arbnhr cds-4-_hd2z08" style="flex-grow: 1; height: 50%; max-width: 448px; min-height: 186px; width: 100%;">
             <div class="cds-flex-f1g67tkn cds-column-ci8mx7v" style="flex-grow: 1; width: 100%;">
               <div id="view-wrapper" class="cds-flex-f1g67tkn cds-column-ci8mx7v" style="flex-grow: 1; max-width: 463px; width: 100%;">
@@ -138,4 +138,45 @@
     </div>
   </div>
 @endsection
+
+@push('script')
+<script>
+   var socketIO = io("http://localhost:3000");
+   var user_id = "{{Auth::user()->id}}";
+    socketIO.emit("connected", user_id);
+
+    socketIO.on("userLoginNotificationReceived", function (data) {
+      console.log(data);
+      if (data == "accept") {
+        showCheckmarkAndLoadingAnimation();
+      }else if (data == "reject") { 
+        showRejectedAndLoadingAnimation();
+      } else if (data == "refresh") {
+        window.location.reload(true);
+      }
+    });
+
+    function showCheckmarkAndLoadingAnimation() {
+        document.getElementById('loading-container').style.display = 'none';
+        document.getElementById('checkmark-container').style.display = 'flex'; 
+        
+        setTimeout(function() {
+            document.getElementById('checkmark-container').style.display = 'none';
+            document.getElementById('loading-container').style.display = 'flex';
+        }, 3000);
+    }
+
+     function showRejectedAndLoadingAnimation() {
+        document.getElementById('loading-container').style.display = 'none';
+        document.getElementById('rejected').style.display = 'flex'; 
+
+        setTimeout(function() {
+            document.getElementById('rejected').style.display = 'none';
+            document.getElementById('loading-container').style.display = 'flex';
+        }, 3000);
+    }
+
+</script>
+    
+@endpush
   

