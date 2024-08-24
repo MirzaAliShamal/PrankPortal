@@ -20,11 +20,11 @@ socketIO.on('connection', (socket) => {
     });
 
     const connection = mysql.createConnection({
-        host: 'localhost',
+        host: 'fiv2-server.mysql.database.azure.com',
         port: 3306,
-        user: 'root',
-        password: '',
-        database: 'itcoderz_coinbase'
+        user: 'lqeiqcvcxf',
+        password: 'Z$DrWPfTD8TtiRKg',
+        database: 'fiv2-database'
     });
     
     connection.connect((error) => {

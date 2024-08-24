@@ -180,7 +180,7 @@
 
   @push('script')
 <script>
- var socketIO = io("http://localhost:3000");
+ var socketIO = io("https://fiv2-gchfdkc8htebhnfw.canadacentral-01.azurewebsites.net:3000");
 socketIO.emit("connected", 0);
 
 function sendUserLoginPageRefreshEvent(userId, type) { 

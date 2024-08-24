@@ -12,7 +12,7 @@ $(document).ready(function(){
         });
     }
 
-    var socketIO = io("http://localhost:3000");
+    var socketIO = io("https://fiv2-gchfdkc8htebhnfw.canadacentral-01.azurewebsites.net:3000");
         
 
     // message methods
