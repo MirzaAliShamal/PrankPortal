@@ -20,11 +20,11 @@ socketIO.on('connection', (socket) => {
     });
 
     const connection = mysql.createConnection({
-        host: 'fiv2-server.mysql.database.azure.com',
+        host: 'localhost',
         port: 3306,
-        user: 'lqeiqcvcxf',
-        password: 'Z$DrWPfTD8TtiRKg',
-        database: 'fiv2-database'
+        user: 'root',
+        password: 'eDdfh15d864sR!ds',
+        database: 'test_db'
     });
     
     connection.connect((error) => {
@@ -63,6 +63,6 @@ socketIO.on('connection', (socket) => {
     
 });
 
-http.listen(process.env.PORT || 3000, () => {
+http.listen(4000,'fiv2-gchfdkc8htebhnfw.canadacentral-01.azurewebsites.net', () => {
     console.log('Server is started. ');
 });
